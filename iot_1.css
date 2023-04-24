@@ -1,0 +1,131 @@
+:root{
+    --space: 3px;
+    --colorr:rgb(6, 25, 73);
+}
+
+body{
+    margin : 0 ;
+    background-color: rgb(48,85,127);
+}
+
+.container{
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+    left: 250px;
+    right: 0;
+    background-color: rgb(3, 20, 61);/* màu nền */
+    padding : 0;
+    display: grid;
+    padding: 2px 2px 5px 2px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+    'item1 item1 item2 item3 item3'
+    'item4 item4 item5 item6 item7';
+}
+.energy_consumption1{
+
+    margin: var(--space);
+    background: var(--colorr);
+    border-radius: 10px ;
+    
+    grid-area: item1;
+}
+.energy_consumption2{
+    margin: var(--space);
+    background: var(--colorr);
+    border-radius: 10px ;
+    grid-area: item2;
+}
+.current_Ampe{
+    margin: var(--space);
+    background: var(--colorr);
+    border-radius: 10px ;
+    grid-area: item3;
+}
+.voltage{
+    margin: var(--space) var(--space) 0 var(--space) ;
+    
+    background: var(--colorr);
+    border-radius: 10px ;
+    grid-area: item4;
+}
+.towerA{
+    grid-area: item5;
+    background: rgb(27,71,132);
+}
+.towerB{
+    grid-area: item6;
+}
+.towerC{
+
+    grid-area: item7;
+}
+.tower {
+    margin: var(--space) var(--space) 0 var(--space) ;
+    margin-bottom:0;
+    background: var(--colorr);
+    border-radius: 5px ;
+    
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 20% 40% 40% ;
+    grid-template-areas:
+    'tow tow tow'
+    'vol fre pow'
+    'vol fre cur';
+
+}
+.tow{
+    margin: 0;
+    
+    grid-area: tow;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 5px ;
+}
+.vol{
+    margin-top: var(--space);
+    
+    grid-area: vol;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 5px ;
+}
+.fre{
+    margin: var(--space) 0 0  var(--space);
+    
+    grid-area: fre;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 5px ;
+}
+.pow{
+    margin: var(--space) 0 0  var(--space);
+    
+    grid-area: pow;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 5px ;
+}
+.cur{
+    margin:var(--space) 0 0  var(--space);
+    
+    grid-area: cur;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 5px ;
+}
+
+
+.content{
+    color:aliceblue;
+    font-size: 30px;
+    margin:20px;
+}
+.content_tow{
+        color:aliceblue;
+        font-size: 15px;
+        
+}
