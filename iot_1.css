@@ -5,10 +5,15 @@
 }
 
 body{
-    margin : 0 ;
-    background: rgb(48,85,127);
+    margin: 0;
+    background-color: var(--colorr);
 }
-
+.navbar{
+    position: relative;
+    right : 0;
+    left :0;
+    /* background-color: rgb(255, 12, 16); */
+}
 .container1{
     position: absolute;
     top: 0;
@@ -48,7 +53,7 @@ body{
     background: var(--colorr);
     border-radius: 10px ;
     grid-area: item2;
-    /* padding:0 20px 20px 20px ; */
+    padding:0 10px 10px 10px ;
 }
 .current_Ampe{
     margin: var(--space);
@@ -130,7 +135,12 @@ body{
     border-radius: 5px ;
 }
 
-
+.head{
+    color: black;
+    left: 100px;
+    width: max;
+    height: 8%;
+}
 .content{
     color:aliceblue;
     font-size: 10px;
@@ -144,11 +154,12 @@ body{
 .tieu_de{
     height: 8%;
     width: 100%;
-    font-size: 25px;
+    font-size: 40px;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 .bt1{
     height: 50px;
