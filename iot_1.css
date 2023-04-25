@@ -6,11 +6,12 @@
 
 body{
     margin : 0 ;
-    background-color: rgb(48,85,127);
+    background: rgb(48,85,127);
 }
+
 .container1{
     position: absolute;
-    top: 0px;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -156,4 +157,34 @@ body{
     border:none;
     font-size: 30px;
     
+}
+@media (max-width: 470px){
+    .container2{
+        left: 20%;
+        grid-template-columns: 100%;
+        grid-template-rows:15% 20% 10% 10% 15% 15% 15%;
+        grid-template-areas:
+        'item1'
+        'item2'
+        'item3'
+        'item4'
+        'item5'
+        'item6'
+        'item7'
+        
+    }
+    .container1{
+        width: 20%;
+        height: 2065px;
+    }
+    .container2{
+        height:2000px;
+    }
+    .bt1{
+        font-size: 10px;
+    }
+    .tieu_de{
+        font-size: 10px;
+        height: 3%;
+    }
 }
