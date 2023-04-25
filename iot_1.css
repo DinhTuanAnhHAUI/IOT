@@ -20,7 +20,7 @@ body{
 }
 .container2{
     position: absolute;
-    top: 80px;
+    top: 8%;
     bottom: 0;
     left: 15%;
     right: 0;
@@ -47,6 +47,7 @@ body{
     background: var(--colorr);
     border-radius: 10px ;
     grid-area: item2;
+    padding: 20px;
 }
 .current_Ampe{
     margin: var(--space);
@@ -132,7 +133,7 @@ body{
 .content{
     color:aliceblue;
     font-size: 30px;
-    margin:20px;
+    margin:0;
 }
 .content_tow{
         color:aliceblue;
@@ -140,15 +141,19 @@ body{
         
 }
 .tieu_de{
-    height: 50px;
+    height: 8%;
     width: 100%;
-    font-size: auto;
+    font-size: 25px;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .bt1{
     height: 50px;
     width: 100%;
     background:var(--color_button);
     border:none;
+    font-size: 30px;
     
 }
